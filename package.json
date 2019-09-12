@@ -25,10 +25,10 @@
   },
   "devDependencies": {
     "nwb": "0.23.x",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
-  "author": "",
+  "author": "Stojan Veljkovic - Cola",
   "homepage": "",
   "license": "MIT",
   "repository": "",
