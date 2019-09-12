@@ -2,16 +2,31 @@ import io from 'socket.io-client';
 import {React} from 'react';
 import MessageSubscriber from './messages-subscriber';
 
-class WebNotify extends React.Component {
+class WebNotify {
 
-  constructor() {
+  constructor(url=null) {
     this.state({
       subscribers: []
     })
 
     if (!WebNotify.instance) {
-      this.url = location.protocol + '//' + location.host + '/wsock';
+      if (!url) {
+        this.url = location.protocol + '//' + location.host + '/wsock';
+      } else {
+        this.url = url;
+      }
+
       this.system = io.connect(this.url);
+
+      this.system.on('push', function (msg) {
+        broadcast(msg.data);
+      });
+
+      this.system.on('output', function (data) {
+        const { room, message } = data;
+        broadcast(room, message)
+      });
+
       WebNotify.instance = this;
     }
 
@@ -73,18 +88,6 @@ class WebNotify extends React.Component {
 
     this.setState({subscribers: tempSubs});
 
-  }
-
-  componentDidMount() {
-    
-    this.system.on('push', function (msg) {
-      broadcast(msg.data);
-    });
-
-    this.system.on('output', function (data) {
-      const {room, message} = data;
-      broadcast(room, message)
-    });
   }
 
 }
