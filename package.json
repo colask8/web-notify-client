@@ -1,0 +1,40 @@
+{
+  "name": "web-notify-client",
+  "version": "1.0.4",
+  "description": "Portal-Pushify Client for Front-End",
+  "main": "./index.js",
+  "peerDependencies": {
+    "react": "^16.4.0"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pluralsight",
+  "license": "ISC",
+  "keywords": [
+    "socket.io",
+    "rest2cmd"
+  ],
+  "dependencies": {
+    "axios": "^0.19.0",
+    "react": "^16.9.0",
+    "socket.io-client": "^2.3.0",
+    "webpack": "^4.40.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.6.2",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack-cli": "^3.3.9"
+  }
+}
