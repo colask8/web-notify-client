@@ -7,8 +7,6 @@ node_js:
 before_install:
   - npm install web-notify-client
 
-after_success:
-
 branches:
   only:
     - master
