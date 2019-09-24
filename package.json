@@ -1,8 +1,9 @@
 {
   "name": "web-notify-client",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Portal-Pushify Client for Front-End",
   "main": "./index.js",
+  "repository": "colask8/web-notify-client",
   "peerDependencies": {
     "react": "^16.4.0"
   },
@@ -11,8 +12,8 @@
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Pluralsight",
-  "license": "ISC",
+  "author": "Stojan Veljkovic",
+  "license": "MIT",
   "keywords": [
     "socket.io",
     "rest2cmd"
