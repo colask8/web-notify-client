@@ -4,6 +4,6 @@
 /lib
 /node_modules
 /umd
-/build
+build/
 package-lock.json
 npm-debug.log*
