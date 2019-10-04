@@ -33,6 +33,7 @@ React Front End Socket.IO modules to use for Rest2CMD and Portal-Pushify applica
 
 ## Message Listener
 Interface for receiving stream/notifications.
+
 | Methods| Parameters | Description|
 |----|----|------|
 |onReadMessage| message | Method invoked when message is received. <br/> Needs unique implementation.
