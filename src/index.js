@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 // import PropTypes from 'prop-types'
 import styles from './styles.css'
 
@@ -11,15 +11,15 @@ import TestPage from './page/test-page.jsx';
 let notifier = WebNotify;
 notifier.addSocket(null, null, "TEESTING");
 
-export default class ExampleComponent extends Component {
-  render() {
-    return (
-      <div className={styles.test}>
-        IN TEST PAGE
-        <TestPage />
-      </div>
-    )
-  }
-}
+// export default class ExampleComponent extends Component {
+//   render() {
+//     return (
+//       <div className={styles.test}>
+//         IN TEST PAGE
+//         <TestPage />
+//       </div>
+//     )
+//   }
+// }
 
 export {WebNotify, MessagesSubscriber, MessageListener};

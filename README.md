@@ -1,6 +1,11 @@
+
 # Web Notify Client for Rest2CMD Stream and Portal-Pushify
 
 React Front End Socket.IO modules to use for Rest2CMD and Portal-Pushify applications.
+
+## Installation
+
+    npm install --save web-notify-client
 
 ## Components
 
@@ -25,3 +30,9 @@ React Front End Socket.IO modules to use for Rest2CMD and Portal-Pushify applica
 |broadcast | <ul><li>room</li><li>message</li></ul>| broadcast messages to message subscriber
 | joinRoom | <ul><li>room</li><li>listener=None</li></ul> | join stream room and subscribe listener to channel|
 |subscribe|<ul><li>room</li><li>listener</li></ul>| subscribe listener to channel|
+
+## Message Listener
+Interface for receiving stream/notifications.
+| Methods| Parameters | Description|
+|----|----|------|
+|onReadMessage| message | Method invoked when message is received. <br/> Needs unique implementation.
