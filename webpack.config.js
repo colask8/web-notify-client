@@ -1,6 +1,7 @@
 // webpack.config.js
 var path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MinifyPlugin = require('babel-minify-webpack-plugin');
 
 module.exports = {
   entry: './index.js',
@@ -12,6 +13,7 @@ module.exports = {
       chunkFilename: '[id].css',
       ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
+    new MinifyPlugin(),
   ],
   output: {
     path: path.resolve(__dirname, 'build'),
