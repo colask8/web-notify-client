@@ -24,7 +24,7 @@
     "rest2cmd"
   ],
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "react": "^16.9.0",
     "socket.io-client": "^2.3.0",
     "webpack": "^4.40.2"
